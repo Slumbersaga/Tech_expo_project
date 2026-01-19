@@ -1,0 +1,412 @@
+[
+  {
+    "timestamp": "2026-01-19T06:32:22.179Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "unauthorized"
+    },
+    "status": 401
+  },
+  {
+    "timestamp": "2026-01-19T06:33:47.884Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "request/body/active is read-only"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:34:24.474Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "POST method not allowed"
+    },
+    "status": 405
+  },
+  {
+    "timestamp": "2026-01-19T06:37:00.985Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "POST method not allowed"
+    },
+    "status": 405
+  },
+  {
+    "timestamp": "2026-01-19T06:37:34.283Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "request/body/active is read-only"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:37:40.179Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "request/body/active is read-only"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:47:31.630Z",
+    "request": {
+      "name": "Workflow 1",
+      "nodes": [
+        {
+          "id": "0f5532f9-36ba-4bef-86c7-30d607400b15",
+          "name": "Jira",
+          "webhookId": "string",
+          "disabled": true,
+          "notesInFlow": true,
+          "notes": "string",
+          "type": "n8n-nodes-base.Jira",
+          "typeVersion": 1,
+          "executeOnce": false,
+          "alwaysOutputData": false,
+          "retryOnFail": false,
+          "maxTries": 0,
+          "waitBetweenTries": 0,
+          "onError": "stopWorkflow",
+          "position": [
+            -100,
+            80
+          ],
+          "parameters": {
+            "additionalProperties": {}
+          },
+          "credentials": {
+            "jiraSoftwareCloudApi": {
+              "id": "35",
+              "name": "jiraApi"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "main": [
+          {
+            "node": "Jira",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      },
+      "settings": {
+        "saveExecutionProgress": true,
+        "saveManualExecutions": true,
+        "saveDataErrorExecution": "all",
+        "saveDataSuccessExecution": "all",
+        "executionTimeout": 3600,
+        "errorWorkflow": "VzqKEW0ShTXA5vPj",
+        "timezone": "America/New_York",
+        "executionOrder": "v1"
+      },
+      "staticData": {
+        "lastId": 1
+      }
+    },
+    "response": {
+      "name": "Workflow 1",
+      "nodes": [
+        {
+          "id": "0f5532f9-36ba-4bef-86c7-30d607400b15",
+          "name": "Jira",
+          "webhookId": "string",
+          "disabled": true,
+          "notesInFlow": true,
+          "notes": "string",
+          "type": "n8n-nodes-base.Jira",
+          "typeVersion": 1,
+          "executeOnce": false,
+          "alwaysOutputData": false,
+          "retryOnFail": false,
+          "maxTries": 0,
+          "waitBetweenTries": 0,
+          "onError": "stopWorkflow",
+          "position": [
+            -100,
+            80
+          ],
+          "parameters": {
+            "additionalProperties": {}
+          },
+          "credentials": {
+            "jiraSoftwareCloudApi": {
+              "id": "35",
+              "name": "jiraApi"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "main": [
+          {
+            "node": "Jira",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      },
+      "settings": {
+        "saveExecutionProgress": true,
+        "saveManualExecutions": true,
+        "saveDataErrorExecution": "all",
+        "saveDataSuccessExecution": "all",
+        "executionTimeout": 3600,
+        "errorWorkflow": "VzqKEW0ShTXA5vPj",
+        "timezone": "America/New_York",
+        "executionOrder": "v1"
+      },
+      "staticData": {
+        "lastId": 1
+      },
+      "active": false,
+      "versionId": "9cb02fe7-42a5-4046-91aa-a61508d42d4c",
+      "id": "w3tyiubdEVelhc9n",
+      "meta": null,
+      "pinData": null,
+      "createdAt": "2026-01-19T06:47:31.491Z",
+      "updatedAt": "2026-01-19T06:47:31.491Z",
+      "isArchived": false,
+      "triggerCount": 0
+    },
+    "status": 200
+  },
+  {
+    "timestamp": "2026-01-19T06:53:20.777Z",
+    "request": {
+      "agent_id": "daily_message_trigger",
+      "name": "Scheduled Chat Notifier",
+      "trigger": {
+        "type": "schedule",
+        "schedule_type": "daily",
+        "time": "13:00",
+        "timezone": "UTC"
+      },
+      "workflow": {
+        "steps": [
+          {
+            "step_id": "send_chat_message",
+            "action": "send_message",
+            "input": {
+              "message_text": "The current time is 13:00.",
+              "target_channel": "chat"
+            }
+          }
+        ]
+      }
+    },
+    "response": {
+      "message": "request/body must have required property 'nodes'"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:54:01.919Z",
+    "request": {
+      "agent_id": "daily_message_trigger",
+      "name": "Scheduled Chat Notifier",
+      "trigger": {
+        "type": "schedule",
+        "schedule_type": "daily",
+        "time": "13:00",
+        "timezone": "UTC"
+      },
+      "workflow": {
+        "steps": [
+          {
+            "step_id": "send_chat_message",
+            "action": "send_message",
+            "input": {
+              "message_text": "The current time is 13:00.",
+              "target_channel": "chat"
+            }
+          }
+        ]
+      }
+    },
+    "response": {
+      "message": "request/body must have required property 'nodes'"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:55:26.680Z",
+    "request": {
+      "name": "Daily 13:00 Chat Message",
+      "nodes": [
+        {
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 13 * * *"
+                }
+              ]
+            }
+          },
+          "id": "e5c4d2a1-0b3c-4d5e-8f6a-7b8c9d0e1f2a",
+          "name": "Schedule Trigger",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1.1,
+          "position": [
+            250,
+            300
+          ]
+        },
+        {
+          "parameters": {
+            "chatInput": "It is now 13:00. This is your scheduled workflow message."
+          },
+          "id": "f1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "name": "Chat Message",
+          "type": "n8n-nodes-base.chatTrigger",
+          "typeVersion": 1,
+          "position": [
+            500,
+            300
+          ]
+        }
+      ],
+      "connections": {
+        "Schedule Trigger": {
+          "main": [
+            [
+              {
+                "node": "Chat Message",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1",
+        "timezone": "UTC"
+      },
+      "staticData": null
+    },
+    "response": {
+      "name": "Daily 13:00 Chat Message",
+      "nodes": [
+        {
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 13 * * *"
+                }
+              ]
+            }
+          },
+          "id": "e5c4d2a1-0b3c-4d5e-8f6a-7b8c9d0e1f2a",
+          "name": "Schedule Trigger",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1.1,
+          "position": [
+            250,
+            300
+          ]
+        },
+        {
+          "parameters": {
+            "chatInput": "It is now 13:00. This is your scheduled workflow message."
+          },
+          "id": "f1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "name": "Chat Message",
+          "type": "n8n-nodes-base.chatTrigger",
+          "typeVersion": 1,
+          "position": [
+            500,
+            300
+          ]
+        }
+      ],
+      "connections": {
+        "Schedule Trigger": {
+          "main": [
+            [
+              {
+                "node": "Chat Message",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1",
+        "timezone": "UTC"
+      },
+      "staticData": null,
+      "active": false,
+      "versionId": "abcf334b-6729-49b4-9959-ab065c11e17b",
+      "id": "Q9kRJegYC4akjXzq",
+      "meta": null,
+      "pinData": null,
+      "createdAt": "2026-01-19T06:55:26.292Z",
+      "updatedAt": "2026-01-19T06:55:26.292Z",
+      "isArchived": false,
+      "triggerCount": 0
+    },
+    "status": 200
+  }
+]
