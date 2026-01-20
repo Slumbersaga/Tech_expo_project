@@ -3,8 +3,19 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { AI_ARCHITECT_PROMPT } from '@/app/lib/prompts';
 
 export async function POST(request: Request) {
+    let body;
     try {
-        const { prompt } = await request.json();
+        body = await request.json();
+    } catch (e) {
+        return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
+    }
+
+    try {
+        const { prompt } = body;
+
+        if (!prompt || typeof prompt !== 'string' || !prompt.trim()) {
+            return NextResponse.json({ error: 'Missing or empty "prompt" field' }, { status: 400 });
+        }
         console.log('[AI Generate] Received prompt:', prompt);
 
         const apiKey = process.env.GEMINI_API_KEY;
@@ -19,6 +30,7 @@ export async function POST(request: Request) {
 
         console.log('[AI Generate] Calling Gemini API...');
         const genAI = new GoogleGenerativeAI(apiKey);
+        // Reverting to gemini-flash-latest as gemini-1.5-flash returned 404 for this key
         const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
 
         const fullPrompt = AI_ARCHITECT_PROMPT.replace('{{user_input}}', prompt);

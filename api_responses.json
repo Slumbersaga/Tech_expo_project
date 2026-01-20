@@ -1,0 +1,1515 @@
+[
+  {
+    "timestamp": "2026-01-19T06:32:22.179Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "unauthorized"
+    },
+    "status": 401
+  },
+  {
+    "timestamp": "2026-01-19T06:33:47.884Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "request/body/active is read-only"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:34:24.474Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "POST method not allowed"
+    },
+    "status": 405
+  },
+  {
+    "timestamp": "2026-01-19T06:37:00.985Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "POST method not allowed"
+    },
+    "status": 405
+  },
+  {
+    "timestamp": "2026-01-19T06:37:34.283Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "request/body/active is read-only"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:37:40.179Z",
+    "request": {
+      "name": "{   \"name\": \"Workflow 1\",   \"nodes\": [     {       \"id\": \"0f5532f9-36ba-4bef-86c7-30d607400b15\",       \"name\": \"Jira\",       \"webhookId\": \"string\",       \"disabled\": true,       \"notesInFlow\": true,       \"notes\": \"string\",       \"type\": \"n8n-nodes-base.Jira\",       \"typeVersion\": 1,       \"executeOnce\": false,       \"alwaysOutputData\": false,       \"retryOnFail\": false,       \"maxTries\": 0,       \"waitBetweenTries\": 0,       \"onError\": \"stopWorkflow\",       \"position\": [         -100,         80       ],       \"parameters\": {         \"additionalProperties\": {}       },       \"credentials\": {         \"jiraSoftwareCloudApi\": {           \"id\": \"35\",           \"name\": \"jiraApi\"         }       }     }   ],   \"connections\": {     \"main\": [       {         \"node\": \"Jira\",         \"type\": \"main\",         \"index\": 0       }     ]   },   \"settings\": {     \"saveExecutionProgress\": true,     \"saveManualExecutions\": true,     \"saveDataErrorExecution\": \"all\",     \"saveDataSuccessExecution\": \"all\",     \"executionTimeout\": 3600,     \"errorWorkflow\": \"VzqKEW0ShTXA5vPj\",     \"timezone\": \"America/New_York\",     \"executionOrder\": \"v1\"   },   \"staticData\": {     \"lastId\": 1   } }",
+      "nodes": [],
+      "connections": {},
+      "settings": {
+        "saveManualExecutions": true,
+        "callers": []
+      },
+      "active": false
+    },
+    "response": {
+      "message": "request/body/active is read-only"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:47:31.630Z",
+    "request": {
+      "name": "Workflow 1",
+      "nodes": [
+        {
+          "id": "0f5532f9-36ba-4bef-86c7-30d607400b15",
+          "name": "Jira",
+          "webhookId": "string",
+          "disabled": true,
+          "notesInFlow": true,
+          "notes": "string",
+          "type": "n8n-nodes-base.Jira",
+          "typeVersion": 1,
+          "executeOnce": false,
+          "alwaysOutputData": false,
+          "retryOnFail": false,
+          "maxTries": 0,
+          "waitBetweenTries": 0,
+          "onError": "stopWorkflow",
+          "position": [
+            -100,
+            80
+          ],
+          "parameters": {
+            "additionalProperties": {}
+          },
+          "credentials": {
+            "jiraSoftwareCloudApi": {
+              "id": "35",
+              "name": "jiraApi"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "main": [
+          {
+            "node": "Jira",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      },
+      "settings": {
+        "saveExecutionProgress": true,
+        "saveManualExecutions": true,
+        "saveDataErrorExecution": "all",
+        "saveDataSuccessExecution": "all",
+        "executionTimeout": 3600,
+        "errorWorkflow": "VzqKEW0ShTXA5vPj",
+        "timezone": "America/New_York",
+        "executionOrder": "v1"
+      },
+      "staticData": {
+        "lastId": 1
+      }
+    },
+    "response": {
+      "name": "Workflow 1",
+      "nodes": [
+        {
+          "id": "0f5532f9-36ba-4bef-86c7-30d607400b15",
+          "name": "Jira",
+          "webhookId": "string",
+          "disabled": true,
+          "notesInFlow": true,
+          "notes": "string",
+          "type": "n8n-nodes-base.Jira",
+          "typeVersion": 1,
+          "executeOnce": false,
+          "alwaysOutputData": false,
+          "retryOnFail": false,
+          "maxTries": 0,
+          "waitBetweenTries": 0,
+          "onError": "stopWorkflow",
+          "position": [
+            -100,
+            80
+          ],
+          "parameters": {
+            "additionalProperties": {}
+          },
+          "credentials": {
+            "jiraSoftwareCloudApi": {
+              "id": "35",
+              "name": "jiraApi"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "main": [
+          {
+            "node": "Jira",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      },
+      "settings": {
+        "saveExecutionProgress": true,
+        "saveManualExecutions": true,
+        "saveDataErrorExecution": "all",
+        "saveDataSuccessExecution": "all",
+        "executionTimeout": 3600,
+        "errorWorkflow": "VzqKEW0ShTXA5vPj",
+        "timezone": "America/New_York",
+        "executionOrder": "v1"
+      },
+      "staticData": {
+        "lastId": 1
+      },
+      "active": false,
+      "versionId": "9cb02fe7-42a5-4046-91aa-a61508d42d4c",
+      "id": "w3tyiubdEVelhc9n",
+      "meta": null,
+      "pinData": null,
+      "createdAt": "2026-01-19T06:47:31.491Z",
+      "updatedAt": "2026-01-19T06:47:31.491Z",
+      "isArchived": false,
+      "triggerCount": 0
+    },
+    "status": 200
+  },
+  {
+    "timestamp": "2026-01-19T06:53:20.777Z",
+    "request": {
+      "agent_id": "daily_message_trigger",
+      "name": "Scheduled Chat Notifier",
+      "trigger": {
+        "type": "schedule",
+        "schedule_type": "daily",
+        "time": "13:00",
+        "timezone": "UTC"
+      },
+      "workflow": {
+        "steps": [
+          {
+            "step_id": "send_chat_message",
+            "action": "send_message",
+            "input": {
+              "message_text": "The current time is 13:00.",
+              "target_channel": "chat"
+            }
+          }
+        ]
+      }
+    },
+    "response": {
+      "message": "request/body must have required property 'nodes'"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:54:01.919Z",
+    "request": {
+      "agent_id": "daily_message_trigger",
+      "name": "Scheduled Chat Notifier",
+      "trigger": {
+        "type": "schedule",
+        "schedule_type": "daily",
+        "time": "13:00",
+        "timezone": "UTC"
+      },
+      "workflow": {
+        "steps": [
+          {
+            "step_id": "send_chat_message",
+            "action": "send_message",
+            "input": {
+              "message_text": "The current time is 13:00.",
+              "target_channel": "chat"
+            }
+          }
+        ]
+      }
+    },
+    "response": {
+      "message": "request/body must have required property 'nodes'"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T06:55:26.680Z",
+    "request": {
+      "name": "Daily 13:00 Chat Message",
+      "nodes": [
+        {
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 13 * * *"
+                }
+              ]
+            }
+          },
+          "id": "e5c4d2a1-0b3c-4d5e-8f6a-7b8c9d0e1f2a",
+          "name": "Schedule Trigger",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1.1,
+          "position": [
+            250,
+            300
+          ]
+        },
+        {
+          "parameters": {
+            "chatInput": "It is now 13:00. This is your scheduled workflow message."
+          },
+          "id": "f1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "name": "Chat Message",
+          "type": "n8n-nodes-base.chatTrigger",
+          "typeVersion": 1,
+          "position": [
+            500,
+            300
+          ]
+        }
+      ],
+      "connections": {
+        "Schedule Trigger": {
+          "main": [
+            [
+              {
+                "node": "Chat Message",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1",
+        "timezone": "UTC"
+      },
+      "staticData": null
+    },
+    "response": {
+      "name": "Daily 13:00 Chat Message",
+      "nodes": [
+        {
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 13 * * *"
+                }
+              ]
+            }
+          },
+          "id": "e5c4d2a1-0b3c-4d5e-8f6a-7b8c9d0e1f2a",
+          "name": "Schedule Trigger",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1.1,
+          "position": [
+            250,
+            300
+          ]
+        },
+        {
+          "parameters": {
+            "chatInput": "It is now 13:00. This is your scheduled workflow message."
+          },
+          "id": "f1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "name": "Chat Message",
+          "type": "n8n-nodes-base.chatTrigger",
+          "typeVersion": 1,
+          "position": [
+            500,
+            300
+          ]
+        }
+      ],
+      "connections": {
+        "Schedule Trigger": {
+          "main": [
+            [
+              {
+                "node": "Chat Message",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1",
+        "timezone": "UTC"
+      },
+      "staticData": null,
+      "active": false,
+      "versionId": "abcf334b-6729-49b4-9959-ab065c11e17b",
+      "id": "Q9kRJegYC4akjXzq",
+      "meta": null,
+      "pinData": null,
+      "createdAt": "2026-01-19T06:55:26.292Z",
+      "updatedAt": "2026-01-19T06:55:26.292Z",
+      "isArchived": false,
+      "triggerCount": 0
+    },
+    "status": 200
+  },
+  {
+    "timestamp": "2026-01-19T08:47:17.017Z",
+    "request": {
+      "name": "Workflow 1",
+      "nodes": [
+        {
+          "id": "0f5532f9-36ba-4bef-86c7-30d607400b15",
+          "name": "Jira",
+          "webhookId": "string",
+          "disabled": true,
+          "notesInFlow": true,
+          "notes": "string",
+          "type": "n8n-nodes-base.Jira",
+          "typeVersion": 1,
+          "executeOnce": false,
+          "alwaysOutputData": false,
+          "retryOnFail": false,
+          "maxTries": 0,
+          "waitBetweenTries": 0,
+          "onError": "stopWorkflow",
+          "position": [
+            -100,
+            80
+          ],
+          "parameters": {
+            "additionalProperties": {}
+          },
+          "credentials": {
+            "jiraSoftwareCloudApi": {
+              "id": "35",
+              "name": "jiraApi"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "main": [
+          {
+            "node": "Jira",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      },
+      "settings": {
+        "saveExecutionProgress": true,
+        "saveManualExecutions": true,
+        "saveDataErrorExecution": "all",
+        "saveDataSuccessExecution": "all",
+        "executionTimeout": 3600,
+        "errorWorkflow": "VzqKEW0ShTXA5vPj",
+        "timezone": "America/New_York",
+        "executionOrder": "v1"
+      },
+      "staticData": {
+        "lastId": 1
+      }
+    },
+    "response": {
+      "name": "Workflow 1",
+      "nodes": [
+        {
+          "id": "0f5532f9-36ba-4bef-86c7-30d607400b15",
+          "name": "Jira",
+          "webhookId": "string",
+          "disabled": true,
+          "notesInFlow": true,
+          "notes": "string",
+          "type": "n8n-nodes-base.Jira",
+          "typeVersion": 1,
+          "executeOnce": false,
+          "alwaysOutputData": false,
+          "retryOnFail": false,
+          "maxTries": 0,
+          "waitBetweenTries": 0,
+          "onError": "stopWorkflow",
+          "position": [
+            -100,
+            80
+          ],
+          "parameters": {
+            "additionalProperties": {}
+          },
+          "credentials": {
+            "jiraSoftwareCloudApi": {
+              "id": "35",
+              "name": "jiraApi"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "main": [
+          {
+            "node": "Jira",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      },
+      "settings": {
+        "saveExecutionProgress": true,
+        "saveManualExecutions": true,
+        "saveDataErrorExecution": "all",
+        "saveDataSuccessExecution": "all",
+        "executionTimeout": 3600,
+        "errorWorkflow": "VzqKEW0ShTXA5vPj",
+        "timezone": "America/New_York",
+        "executionOrder": "v1"
+      },
+      "staticData": {
+        "lastId": 1
+      },
+      "active": false,
+      "versionId": "3c8d371f-cdb9-45ee-9d63-2cfdd4902b8a",
+      "id": "hhvGke1QU3YVzkdi",
+      "meta": null,
+      "pinData": null,
+      "createdAt": "2026-01-19T08:47:16.900Z",
+      "updatedAt": "2026-01-19T08:47:16.900Z",
+      "isArchived": false,
+      "triggerCount": 0
+    },
+    "status": 200
+  },
+  {
+    "timestamp": "2026-01-19T13:07:33.024Z",
+    "request": {
+      "name": "Daily 1300 Confirmation Code Agent",
+      "nodes": [
+        {
+          "id": "f3a6e9c4-0a1b-4d2c-8e3f-5b4d6a7c8e9f",
+          "name": "Scheduled Trigger",
+          "type": "n8n-nodes-base.Cron",
+          "typeVersion": 1,
+          "position": [
+            250,
+            200
+          ],
+          "parameters": {
+            "triggerTime": "13:00",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+          "name": "Generate Confirmation Code",
+          "type": "n8n-nodes-base.Code",
+          "typeVersion": 1,
+          "position": [
+            550,
+            200
+          ],
+          "parameters": {
+            "mode": "run",
+            "jsCode": "const confirmationCode = Math.random().toString(36).substring(2, 8).toUpperCase();\n\nreturn [{ json: { message: \"Daily execution complete at 13:00 UTC.\", confirmation_code: confirmationCode } }];"
+          }
+        }
+      ],
+      "connections": {
+        "Scheduled Trigger": {
+          "main": [
+            [
+              {
+                "node": "Generate Confirmation Code",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      }
+    },
+    "response": {
+      "message": "request/body must have required property 'settings'"
+    },
+    "status": 400
+  },
+  {
+    "timestamp": "2026-01-19T13:11:15.005Z",
+    "request": {
+      "name": "Daily Chat Notification at 13:00",
+      "nodes": [
+        {
+          "id": "a0e1c2d3-f4b5-4a67-8c9d-e0f1a2b3c4d5",
+          "name": "Daily Trigger (13:00)",
+          "type": "n8n-nodes-base.cron",
+          "typeVersion": 1,
+          "position": [
+            250,
+            100
+          ],
+          "parameters": {
+            "rule": "0 13 * * *",
+            "options": {}
+          },
+          "credentials": {}
+        },
+        {
+          "id": "b1f2c3d4-e5a6-4b78-9d0e-1f2a3b4c5d6e",
+          "name": "Prepare Chat Response",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            500,
+            100
+          ],
+          "parameters": {
+            "values": [
+              {
+                "name": "chat_message",
+                "value": "Good afternoon! This is the automated 1 PM daily check-in message."
+              }
+            ],
+            "options": {}
+          },
+          "credentials": {}
+        },
+        {
+          "id": "c2g3d4e5-f6a7-4c89-a0b1-2c3d4e5f6a7b",
+          "name": "Send Chat Message",
+          "type": "n8n-nodes-base.telegram",
+          "typeVersion": 1,
+          "position": [
+            750,
+            100
+          ],
+          "parameters": {
+            "chatId": "YOUR_TARGET_CHAT_ID",
+            "text": "={{$node[\"Prepare Chat Response\"].json.chat_message}}",
+            "operation": "sendMessage"
+          },
+          "credentials": {
+            "telegramApi": "YOUR_TELEGRAM_CREDENTIAL_NAME"
+          }
+        }
+      ],
+      "connections": {
+        "Daily Trigger (13:00)": {
+          "main": [
+            [
+              {
+                "node": "Prepare Chat Response",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Prepare Chat Response": {
+          "main": [
+            [
+              {
+                "node": "Send Chat Message",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1"
+      }
+    },
+    "response": {
+      "name": "Daily Chat Notification at 13:00",
+      "nodes": [
+        {
+          "id": "a0e1c2d3-f4b5-4a67-8c9d-e0f1a2b3c4d5",
+          "name": "Daily Trigger (13:00)",
+          "type": "n8n-nodes-base.cron",
+          "typeVersion": 1,
+          "position": [
+            250,
+            100
+          ],
+          "parameters": {
+            "rule": "0 13 * * *",
+            "options": {}
+          },
+          "credentials": {}
+        },
+        {
+          "id": "b1f2c3d4-e5a6-4b78-9d0e-1f2a3b4c5d6e",
+          "name": "Prepare Chat Response",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            500,
+            100
+          ],
+          "parameters": {
+            "values": [
+              {
+                "name": "chat_message",
+                "value": "Good afternoon! This is the automated 1 PM daily check-in message."
+              }
+            ],
+            "options": {}
+          },
+          "credentials": {}
+        },
+        {
+          "id": "c2g3d4e5-f6a7-4c89-a0b1-2c3d4e5f6a7b",
+          "name": "Send Chat Message",
+          "type": "n8n-nodes-base.telegram",
+          "typeVersion": 1,
+          "position": [
+            750,
+            100
+          ],
+          "parameters": {
+            "chatId": "YOUR_TARGET_CHAT_ID",
+            "text": "={{$node[\"Prepare Chat Response\"].json.chat_message}}",
+            "operation": "sendMessage"
+          },
+          "credentials": {
+            "telegramApi": "YOUR_TELEGRAM_CREDENTIAL_NAME"
+          }
+        }
+      ],
+      "connections": {
+        "Daily Trigger (13:00)": {
+          "main": [
+            [
+              {
+                "node": "Prepare Chat Response",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Prepare Chat Response": {
+          "main": [
+            [
+              {
+                "node": "Send Chat Message",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1"
+      },
+      "active": false,
+      "versionId": "a425b06d-d915-4078-b4df-b7493dfd4a83",
+      "id": "Efjc7hXUit0QYYvg",
+      "staticData": null,
+      "meta": null,
+      "pinData": null,
+      "createdAt": "2026-01-19T13:11:14.590Z",
+      "updatedAt": "2026-01-19T13:11:14.590Z",
+      "isArchived": false,
+      "triggerCount": 0
+    },
+    "status": 200
+  },
+  {
+    "timestamp": "2026-01-19T13:17:55.334Z",
+    "request": {
+      "name": "Daily Chat Response Generator",
+      "nodes": [
+        {
+          "id": "e4a8b7c3-1d0f-4e6a-8c9d-2f1b3a5c7e9d",
+          "name": "Schedule Trigger",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            100,
+            100
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "triggerAtHour": 13
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "9b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+          "name": "Generate Chat Response",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            350,
+            100
+          ],
+          "parameters": {
+            "values": {
+              "string": [
+                {
+                  "name": "chatResponse",
+                  "value": "Daily check-in successful at 13:00. How can I assist you today?"
+                }
+              ]
+            },
+            "options": {}
+          }
+        }
+      ],
+      "connections": {
+        "Schedule Trigger": {
+          "main": [
+            [
+              {
+                "node": "Generate Chat Response",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1"
+      }
+    },
+    "response": {
+      "name": "Daily Chat Response Generator",
+      "nodes": [
+        {
+          "id": "e4a8b7c3-1d0f-4e6a-8c9d-2f1b3a5c7e9d",
+          "name": "Schedule Trigger",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            100,
+            100
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "triggerAtHour": 13
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "9b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+          "name": "Generate Chat Response",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            350,
+            100
+          ],
+          "parameters": {
+            "values": {
+              "string": [
+                {
+                  "name": "chatResponse",
+                  "value": "Daily check-in successful at 13:00. How can I assist you today?"
+                }
+              ]
+            },
+            "options": {}
+          }
+        }
+      ],
+      "connections": {
+        "Schedule Trigger": {
+          "main": [
+            [
+              {
+                "node": "Generate Chat Response",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1"
+      },
+      "active": false,
+      "versionId": "b0b3bc53-c6e4-4ad2-af45-1df7078038f2",
+      "id": "qRU3dOzNeUCIgrOr",
+      "staticData": null,
+      "meta": null,
+      "pinData": null,
+      "createdAt": "2026-01-19T13:17:55.252Z",
+      "updatedAt": "2026-01-19T13:17:55.252Z",
+      "isArchived": false,
+      "triggerCount": 0
+    },
+    "status": 200
+  },
+  {
+    "timestamp": "2026-01-20T03:40:46.010Z",
+    "request": {
+      "name": "2D Game Builder Agent",
+      "nodes": [
+        {
+          "id": "e931a7c0-03a1-4d1a-9694-82a93864115f",
+          "name": "Manual Start",
+          "type": "n8n-nodes-base.manualTrigger",
+          "typeVersion": 1,
+          "position": [
+            250,
+            150
+          ],
+          "parameters": {}
+        },
+        {
+          "id": "c1f8b3c3-d9f7-4a0b-9c3f-427909384501",
+          "name": "Concept Generator (LLM)",
+          "type": "n8n-nodes-base.aiText",
+          "typeVersion": 1,
+          "position": [
+            250,
+            300
+          ],
+          "parameters": {
+            "model": "gpt-4",
+            "instruction": "Analyze the user's initial game idea (e.g., 'Metroidvania about cats') and generate a detailed concept, core mechanics list, and a precise list of required visual assets (sprites, backgrounds) and code modules.",
+            "inputData": "Initial Game Idea"
+          },
+          "credentials": {
+            "openAiApi": {
+              "id": "mock_openai_cred",
+              "name": "OpenAI Credentials"
+            }
+          }
+        },
+        {
+          "id": "d05d7b56-8a3a-44e2-a16f-47401f80879e",
+          "name": "Requirement Parser",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            250,
+            450
+          ],
+          "parameters": {
+            "options": {
+              "dataMode": "json",
+              "inputDataExpression": "=JSON.parse($json.response)"
+            }
+          }
+        },
+        {
+          "id": "f8a20e8a-8e2b-426d-a131-0498a9616d25",
+          "name": "Generate Sprites (Mock API)",
+          "type": "n8n-nodes-base.httpRequest",
+          "typeVersion": 3,
+          "position": [
+            50,
+            600
+          ],
+          "parameters": {
+            "url": "https://api.art-generation.mock/generate",
+            "method": "POST",
+            "options": {
+              "body": {
+                "asset_list": "{{$json.asset_list}}",
+                "style": "Pixel Art 16-bit"
+              },
+              "bodyContentType": "json"
+            }
+          }
+        },
+        {
+          "id": "03e4d9c7-57b1-4d51-872f-5192c7332c8e",
+          "name": "Generate Game Logic Code",
+          "type": "n8n-nodes-base.aiText",
+          "typeVersion": 1,
+          "position": [
+            450,
+            600
+          ],
+          "parameters": {
+            "model": "gpt-4-turbo",
+            "instruction": "Based on the core mechanics provided, generate a foundational 'Player Movement' and 'Collision Detection' script for a 2D environment (e.g., Godot GDScript or Python PyGame structure). Output code only.",
+            "inputData": "Core Mechanics"
+          },
+          "credentials": {
+            "openAiApi": {
+              "id": "mock_openai_cred",
+              "name": "OpenAI Credentials"
+            }
+          }
+        },
+        {
+          "id": "b3e39050-04f5-4654-8c3b-d50d0322c321",
+          "name": "Assemble Final Output",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            250,
+            800
+          ],
+          "parameters": {
+            "options": {
+              "values": [
+                {
+                  "name": "Game_Concept",
+                  "value": "{{$node[\"Concept Generator (LLM)\"].json[\"response\"]}}"
+                },
+                {
+                  "name": "Generated_Code",
+                  "value": "{{$node[\"Generate Game Logic Code\"].json[\"response\"]}}"
+                },
+                {
+                  "name": "Asset_Request_Status",
+                  "value": "{{$node[\"Generate Sprites (Mock API)\"].json[\"statusCode\"]}}"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "connections": {
+        "Manual Start": {
+          "main": [
+            [
+              {
+                "node": "Concept Generator (LLM)",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Concept Generator (LLM)": {
+          "main": [
+            [
+              {
+                "node": "Requirement Parser",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Requirement Parser": {
+          "main": [
+            [
+              {
+                "node": "Generate Sprites (Mock API)",
+                "type": "main",
+                "index": 0
+              }
+            ],
+            [
+              {
+                "node": "Generate Game Logic Code",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Generate Sprites (Mock API)": {
+          "main": [
+            [
+              {
+                "node": "Assemble Final Output",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Generate Game Logic Code": {
+          "main": [
+            [
+              {
+                "node": "Assemble Final Output",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1"
+      }
+    },
+    "response": {
+      "message": "unauthorized"
+    },
+    "status": 401
+  },
+  {
+    "timestamp": "2026-01-20T03:44:01.272Z",
+    "request": {
+      "name": "Daily Mail Search and Slack Notification",
+      "nodes": [
+        {
+          "id": "a98c76e2-5b1d-4f30-8d59-2c70a8b94f6f",
+          "name": "Schedule Trigger",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            250,
+            150
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "triggerAtHour": 9
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "e4f1a0d8-1b2c-4e3d-8a5f-6d7c9b0e1234",
+          "name": "Gmail Search",
+          "type": "n8n-nodes-base.gmail",
+          "typeVersion": 2,
+          "position": [
+            500,
+            150
+          ],
+          "parameters": {
+            "resource": "message",
+            "operation": "getMany",
+            "options": {
+              "query": "is:unread after:yesterday",
+              "maxResults": 10
+            }
+          },
+          "credentials": {
+            "gmailApi": {
+              "id": "placeholder_gmail_credentials"
+            }
+          }
+        },
+        {
+          "id": "b1a2c3d4-e5f6-7890-a1b2-c3d4e5f67890",
+          "name": "Send to Slack",
+          "type": "n8n-nodes-base.slack",
+          "typeVersion": 3,
+          "position": [
+            750,
+            150
+          ],
+          "parameters": {
+            "channel": "#ai-alerts",
+            "text": "=Emails found: {{ $('Gmail Search').all().length }}. See workflow for details.",
+            "operation": "postMessage"
+          },
+          "credentials": {
+            "slackApi": {
+              "id": "placeholder_slack_credentials"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "Schedule Trigger": {
+          "main": [
+            [
+              {
+                "node": "Gmail Search",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Gmail Search": {
+          "main": [
+            [
+              {
+                "node": "Send to Slack",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1"
+      }
+    },
+    "response": {
+      "message": "unauthorized"
+    },
+    "status": 401
+  },
+  {
+    "timestamp": "2026-01-20T03:49:54.288Z",
+    "request": {
+      "name": "Daily Meeting Scanner and Scheduler",
+      "nodes": [
+        {
+          "id": "e0b5d9e1-2c67-4e9f-8a03-9d0b0f4c3a2f",
+          "name": "Schedule Trigger (9 AM)",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            250,
+            150
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "triggerAtHour": 9
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c1f7a0c8-4e8b-4d3a-8f1d-7b2e1a3d9f0c",
+          "name": "Read Mail",
+          "type": "n8n-nodes-base.imap",
+          "typeVersion": 1,
+          "position": [
+            500,
+            150
+          ],
+          "parameters": {
+            "operation": "getMessages",
+            "searchCriteria": [
+              {
+                "field": "unread",
+                "value": true
+              }
+            ],
+            "folder": "INBOX",
+            "options": {}
+          },
+          "credentials": {
+            "imapApi": {
+              "id": "placeholder_imap_credential",
+              "name": "Placeholder IMAP Credentials"
+            }
+          }
+        },
+        {
+          "id": "b3a2e1d4-7f6c-4c5b-9d8e-1f0a9c8b7d6e",
+          "name": "Extract Meeting Details",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            750,
+            150
+          ],
+          "parameters": {
+            "options": {},
+            "values": [
+              {
+                "name": "summary",
+                "value": "={{$json.subject}}",
+                "alwaysSetData": true
+              },
+              {
+                "name": "startDateTime",
+                "value": "={{$json.emailBody.match(/Date: (.*?)/)[1]}}",
+                "alwaysSetData": true
+              },
+              {
+                "name": "endDateTime",
+                "value": "={{$json.emailBody.match(/End Date: (.*?)/)[1]}}",
+                "alwaysSetData": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "a4c6b8f0-3e2d-4a1c-8b7a-2d4e0c6a5b9d",
+          "name": "Create Calendar Event",
+          "type": "n8n-nodes-base.googleCalendar",
+          "typeVersion": 2,
+          "position": [
+            1000,
+            150
+          ],
+          "parameters": {
+            "operation": "create",
+            "calendarId": "primary",
+            "resource": "event",
+            "summary": "={{$json.summary}}",
+            "startDateTime": "={{$json.startDateTime}}",
+            "endDateTime": "={{$json.endDateTime}}",
+            "options": {}
+          },
+          "credentials": {
+            "googleCalendarApi": {
+              "id": "placeholder_google_calendar_credential",
+              "name": "Placeholder Google Calendar Credentials"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "Schedule Trigger (9 AM)": {
+          "main": [
+            [
+              {
+                "node": "Read Mail",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Read Mail": {
+          "main": [
+            [
+              {
+                "node": "Extract Meeting Details",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Extract Meeting Details": {
+          "main": [
+            [
+              {
+                "node": "Create Calendar Event",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1"
+      }
+    },
+    "response": {
+      "name": "Daily Meeting Scanner and Scheduler",
+      "nodes": [
+        {
+          "id": "e0b5d9e1-2c67-4e9f-8a03-9d0b0f4c3a2f",
+          "name": "Schedule Trigger (9 AM)",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            250,
+            150
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "triggerAtHour": 9
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c1f7a0c8-4e8b-4d3a-8f1d-7b2e1a3d9f0c",
+          "name": "Read Mail",
+          "type": "n8n-nodes-base.imap",
+          "typeVersion": 1,
+          "position": [
+            500,
+            150
+          ],
+          "parameters": {
+            "operation": "getMessages",
+            "searchCriteria": [
+              {
+                "field": "unread",
+                "value": true
+              }
+            ],
+            "folder": "INBOX",
+            "options": {}
+          },
+          "credentials": {
+            "imapApi": {
+              "id": "placeholder_imap_credential",
+              "name": "Placeholder IMAP Credentials"
+            }
+          }
+        },
+        {
+          "id": "b3a2e1d4-7f6c-4c5b-9d8e-1f0a9c8b7d6e",
+          "name": "Extract Meeting Details",
+          "type": "n8n-nodes-base.set",
+          "typeVersion": 1,
+          "position": [
+            750,
+            150
+          ],
+          "parameters": {
+            "options": {},
+            "values": [
+              {
+                "name": "summary",
+                "value": "={{$json.subject}}",
+                "alwaysSetData": true
+              },
+              {
+                "name": "startDateTime",
+                "value": "={{$json.emailBody.match(/Date: (.*?)/)[1]}}",
+                "alwaysSetData": true
+              },
+              {
+                "name": "endDateTime",
+                "value": "={{$json.emailBody.match(/End Date: (.*?)/)[1]}}",
+                "alwaysSetData": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "a4c6b8f0-3e2d-4a1c-8b7a-2d4e0c6a5b9d",
+          "name": "Create Calendar Event",
+          "type": "n8n-nodes-base.googleCalendar",
+          "typeVersion": 2,
+          "position": [
+            1000,
+            150
+          ],
+          "parameters": {
+            "operation": "create",
+            "calendarId": "primary",
+            "resource": "event",
+            "summary": "={{$json.summary}}",
+            "startDateTime": "={{$json.startDateTime}}",
+            "endDateTime": "={{$json.endDateTime}}",
+            "options": {}
+          },
+          "credentials": {
+            "googleCalendarApi": {
+              "id": "placeholder_google_calendar_credential",
+              "name": "Placeholder Google Calendar Credentials"
+            }
+          }
+        }
+      ],
+      "connections": {
+        "Schedule Trigger (9 AM)": {
+          "main": [
+            [
+              {
+                "node": "Read Mail",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Read Mail": {
+          "main": [
+            [
+              {
+                "node": "Extract Meeting Details",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Extract Meeting Details": {
+          "main": [
+            [
+              {
+                "node": "Create Calendar Event",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "settings": {
+        "executionOrder": "v1",
+        "callerPolicy": "workflowsFromSameOwner",
+        "availableInMCP": false
+      },
+      "active": false,
+      "versionId": "9177226c-d3cc-4733-87a2-b3fc11fb21de",
+      "id": "xfmbpLX6HrGZywrr",
+      "description": null,
+      "staticData": null,
+      "meta": null,
+      "pinData": null,
+      "activeVersionId": null,
+      "updatedAt": "2026-01-20T03:49:54.227Z",
+      "createdAt": "2026-01-20T03:49:54.227Z",
+      "isArchived": false,
+      "versionCounter": 1,
+      "triggerCount": 0
+    },
+    "status": 200
+  }
+]
