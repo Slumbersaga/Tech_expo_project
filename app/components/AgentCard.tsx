@@ -1,4 +1,5 @@
 import { MoreVertical } from 'lucide-react';
+import Link from 'next/link';
 
 interface AgentCardProps {
     name: string;
@@ -8,9 +9,10 @@ interface AgentCardProps {
     lastRun?: string;
     icons?: React.ReactNode[];
     workflowUrl?: string;
+    agentId?: string;
 }
 
-export function AgentCard({ name, status, statusColor = 'gray', description, lastRun, icons, workflowUrl }: AgentCardProps) {
+export function AgentCard({ name, status, statusColor = 'gray', description, lastRun, icons, workflowUrl, agentId }: AgentCardProps) {
     return (
         <div className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-5 flex flex-col h-full">
             <div className="flex justify-between items-start mb-2">
@@ -39,9 +41,18 @@ export function AgentCard({ name, status, statusColor = 'gray', description, las
                 </div>
             </div>
 
-            <p className="text-sm text-gray-500 mb-6 flex-1 line-clamp-3 leading-relaxed">
+            <p className="text-sm text-gray-500 mb-4 flex-1 line-clamp-3 leading-relaxed">
                 {description}
             </p>
+
+            {agentId && (
+                <Link
+                    href={`/editor/${agentId}`}
+                    className="mb-4 w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors text-center"
+                >
+                    Edit with AI
+                </Link>
+            )}
 
             <div className="flex items-center justify-between mt-auto">
                 <div className="flex items-center gap-2">

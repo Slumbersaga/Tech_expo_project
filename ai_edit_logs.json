@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-01-20T03:05:48.571Z",
+    "workflowId": "Q1jp514J2osCW5Le",
+    "userRequest": "can you remove the extra nodes from it which are now disabled",
+    "response": "{\n  \"createdAt\": \"2026-01-18T14:38:17.423Z\",\n  \"updatedAt\": \"2026-01-18T18:51:58.000Z\",\n  \"id\": \"Q1jp514J2osCW5Le\",\n  \"name\": \"agent-builder\",\n  \"active\": true,\n  \"isArchived\": false,\n  \"nodes\": [\n    {\n      \"parameters\": {\n        \"jsCode\": \"function slugify(name) {\\n  return name\\n    .toLowerCase()\\n    .replace(/[^a-z0-9]+/g, \\\"-\\\")\\n    .replace(/(^-|-$)/g, \\\"\\\");\\n}\\n\\nconst agentInput = $json.body;\\n\\nif (!agentInput?.agentName) {\\n  throw new Error(\\\"agentName is required\\\");\\n}\\n\\nconst slug = slugify(agentInput.agentName);\\n\\n// This structure matches the n8n Public API v1 for creating a workflow\\nconst workflowData = {\\n  name: agentInput.agentName,\\n  nodes: [\\n    {\\n      id: \\\"webhook-node\\\",\\n      name: \\\"Webhook\\\",\\n      type: \\\"n8n-nodes-base.webhook\\\",\\n      typeVersion: 2,\\n      position: [0, 0],\\n      parameters: {\\n        httpMethod: \\\"POST\\\",\\n        path: slug,\\n        responseMode: \\\"onReceived\\\"\\n      }\\n    },\\n    {\\n      id: \\\"logic-node\\\",\\n    ",
+    "success": true
+  },
+  {
+    "timestamp": "2026-01-20T03:11:25.444Z",
+    "workflowId": "Q1jp514J2osCW5Le",
+    "userRequest": "can you remove the extra nodes from it which are now disabled",
+    "response": "{\n  \"createdAt\": \"2026-01-18T14:38:17.423Z\",\n  \"updatedAt\": \"2026-01-18T18:51:58.000Z\",\n  \"id\": \"Q1jp514J2osCW5Le\",\n  \"name\": \"agent-builder\",\n  \"active\": true,\n  \"isArchived\": false,\n  \"nodes\": [\n    {\n      \"parameters\": {\n        \"jsCode\": \"function slugify(name) {\\n  return name\\n    .toLowerCase()\\n    .replace(/[^a-z0-9]+/g, \\\"-\\\")\\n    .replace(/(^-|-$)/g, \\\"\\\");\\n}\\n\\nconst agentInput = $json.body;\\n\\nif (!agentInput?.agentName) {\\n  throw new Error(\\\"agentName is required\\\");\\n}\\n\\nconst slug = slugify(agentInput.agentName);\\n\\n// This structure matches the n8n Public API v1 for creating a workflow\\nconst workflowData = {\\n  name: agentInput.agentName,\\n  nodes: [\\n    {\\n      id: \\\"webhook-node\\\",\\n      name: \\\"Webhook\\\",\\n      type: \\\"n8n-nodes-base.webhook\\\",\\n      typeVersion: 2,\\n      position: [0, 0],\\n      parameters: {\\n        httpMethod: \\\"POST\\\",\\n        path: slug,\\n        responseMode: \\\"onReceived\\\"\\n      }\\n    },\\n    {\\n      id: \\\"logic-node\\\",\\n    ",
+    "success": true
+  },
+  {
+    "timestamp": "2026-01-20T03:12:06.476Z",
+    "workflowId": "Q1jp514J2osCW5Le",
+    "userRequest": "or can you remove the webhook node from the workflow",
+    "response": "{\n  \"createdAt\": \"2026-01-18T14:38:17.423Z\",\n  \"updatedAt\": \"2026-01-18T18:51:58.000Z\",\n  \"id\": \"Q1jp514J2osCW5Le\",\n  \"name\": \"agent-builder\",\n  \"active\": true,\n  \"isArchived\": false,\n  \"nodes\": [\n    {\n      \"parameters\": {\n        \"jsCode\": \"// ---------- helpers ----------\\nfunction slugify(name) {\\n  return name\\n    .toLowerCase()\\n    .replace(/[^a-z0-9]+/g, \\\"-\\\")\\n    .replace(/(^-|-$)/g, \\\"\\\");\\n}\\n\\nfunction buildAgentWorkflow(agentDef) {\\n  const slug = slugify(agentDef.agentName);\\n\\n  return {\\n    name: agentDef.agentName,\\n    nodes: [\\n      {\\n        id: \\\"webhook\\\",\\n        name: \\\"Webhook\\\",\\n        type: \\\"n8n-nodes-base.webhook\\\",\\n        typeVersion: 2,\\n        position: [0, 0],\\n        parameters: {\\n          httpMethod: \\\"POST\\\",\\n          path: slug,\\n          responseMode: \\\"responseNode\\\"\\n        }\\n      },\\n      {\\n        id: \\\"agentLogic\\\",\\n        name: \\\"Agent Logic\\\",\\n        type: \\\"n8n-nodes-base.code\\\",\\n        typeVersion: 2,\\n       ",
+    "success": true
+  },
+  {
+    "timestamp": "2026-01-20T03:23:03.333Z",
+    "workflowId": "Q1jp514J2osCW5Le",
+    "userRequest": "can you remove the extra nodes from it which are now disabled",
+    "response": "{\n  \"createdAt\": \"2026-01-18T14:38:17.423Z\",\n  \"updatedAt\": \"2026-01-18T18:51:58.000Z\",\n  \"id\": \"Q1jp514J2osCW5Le\",\n  \"name\": \"agent-builder\",\n  \"active\": true,\n  \"isArchived\": false,\n  \"nodes\": [\n    {\n      \"parameters\": {\n        \"jsCode\": \"function slugify(name) {\\n  return name\\n    .toLowerCase()\\n    .replace(/[^a-z0-9]+/g, \\\"-\\\")\\n    .replace(/(^-|-$)/g, \\\"\\\");\\n}\\n\\nconst agentInput = $json.body;\\n\\nif (!agentInput?.agentName) {\\n  throw new Error(\\\"agentName is required\\\");\\n}\\n\\nconst slug = slugify(agentInput.agentName);\\n\\n// This structure matches the n8n Public API v1 for creating a workflow\\nconst workflowData = {\\n  name: agentInput.agentName,\\n  nodes: [\\n    {\\n      id: \\\"webhook-node\\\",\\n      name: \\\"Webhook\\\",\\n      type: \\\"n8n-nodes-base.webhook\\\",\\n      typeVersion: 2,\\n      position: [0, 0],\\n      parameters: {\\n        httpMethod: \\\"POST\\\",\\n        path: slug,\\n        responseMode: \\\"onReceived\\\"\\n      }\\n    },\\n    {\\n      id: \\\"logic-node\\\",\\n    ",
+    "success": true
+  },
+  {
+    "timestamp": "2026-01-20T03:35:25.028Z",
+    "workflowId": "Q1jp514J2osCW5Le",
+    "userRequest": "can you remove the extra nodes from it which are now disabled",
+    "response": "{\n  \"name\": \"agent-builder\",\n  \"nodes\": [\n    {\n      \"parameters\": {\n        \"jsCode\": \"function slugify(name) {\\n  return name\\n    .toLowerCase()\\n    .replace(/[^a-z0-9]+/g, \\\"-\\\")\\n    .replace(/(^-|-$)/g, \\\"\\\");\\n}\\n\\nconst agentInput = $json.body;\\n\\nif (!agentInput?.agentName) {\\n  throw new Error(\\\"agentName is required\\\");\\n}\\n\\nconst slug = slugify(agentInput.agentName);\\n\\n// This structure matches the n8n Public API v1 for creating a workflow\\nconst workflowData = {\\n  name: agentInput.agentName,\\n  nodes: [\\n    {\\n      id: \\\"webhook-node\\\",\\n      name: \\\"Webhook\\\",\\n      type: \\\"n8n-nodes-base.webhook\\\",\\n      typeVersion: 2,\\n      position: [0, 0],\\n      parameters: {\\n        httpMethod: \\\"POST\\\",\\n        path: slug,\\n        responseMode: \\\"onReceived\\\"\\n      }\\n    },\\n    {\\n      id: \\\"logic-node\\\",\\n      name: \\\"Logic\\\",\\n      type: \\\"n8n-nodes-base.code\\\",\\n      typeVersion: 2,\\n      position: [250, 0],\\n      parameters: {\\n        jsCode: `return [{",
+    "success": true
+  },
+  {
+    "timestamp": "2026-01-20T03:36:18.694Z",
+    "workflowId": "Q1jp514J2osCW5Le",
+    "userRequest": "can you add a web hook node to the graph",
+    "response": "{\n  \"name\": \"agent-builder\",\n  \"nodes\": [\n    {\n      \"parameters\": {\n        \"jsCode\": \"function slugify(name) {\\n  return name\\n    .toLowerCase()\\n    .replace(/[^a-z0-9]+/g, \\\"-\\\")\\n    .replace(/(^-|-$)/g, \\\"\\\");\\n}\\n\\nconst agentInput = $json.body;\\n\\nif (!agentInput?.agentName) {\\n  throw new Error(\\\"agentName is required\\\");\\n}\\n\\nconst slug = slugify(agentInput.agentName);\\n\\n// This structure matches the n8n Public API v1 for creating a workflow\\nconst workflowData = {\\n  name: agentInput.agentName,\\n  nodes: [\\n    {\\n      id: \\\"webhook-node\\\",\\n      name: \\\"Webhook\\\",\\n      type: \\\"n8n-nodes-base.webhook\\\",\\n      typeVersion: 2,\\n      position: [0, 0],\\n      parameters: {\\n        httpMethod: \\\"POST\\\",\\n        path: slug,\\n        responseMode: \\\"onReceived\\\"\\n      }\\n    },\\n    {\\n      id: \\\"logic-node\\\",\\n      name: \\\"Logic\\\",\\n      type: \\\"n8n-nodes-base.code\\\",\\n      typeVersion: 2,\\n      position: [250, 0],\\n      parameters: {\\n        jsCode: `return [{",
+    "success": true
+  }
+]

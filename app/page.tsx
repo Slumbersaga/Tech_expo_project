@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Sidebar } from './components/Sidebar';
 import { AgentCard } from './components/AgentCard';
 import { Search, LayoutGrid, List, Plus } from 'lucide-react';
@@ -198,6 +199,7 @@ export default function Dashboard() {
                       lastRun={agent.lastRun}
                       icons={agent.icons?.map((i: string) => <span key={i}>{i}</span>)}
                       workflowUrl={`http://localhost:5678/workflow/${agent.id}`}
+                      agentId={agent.id}
                     />
                   ))}
                 </div>
@@ -228,14 +230,20 @@ export default function Dashboard() {
                             </span>
                           </td>
                           <td className="px-6 py-4">{agent.lastRun}</td>
-                          <td className="px-6 py-4 text-right">
+                          <td className="px-6 py-4 text-right flex items-center justify-end gap-3">
+                            <Link
+                              href={`/editor/${agent.id}`}
+                              className="text-indigo-600 hover:text-indigo-900 font-medium hover:underline"
+                            >
+                              Edit
+                            </Link>
                             <a
                               href={`http://localhost:5678/workflow/${agent.id}`}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-indigo-600 hover:text-indigo-900 font-medium hover:underline"
+                              className="text-gray-500 hover:text-gray-700 font-medium hover:underline"
                             >
-                              Open
+                              Open in n8n
                             </a>
                           </td>
                         </tr>
@@ -257,69 +265,144 @@ export default function Dashboard() {
 
       {/* AI Chat / New Agent Interface */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-[#1C1C1C] z-50 flex flex-col items-center justify-center animate-in fade-in duration-200">
-          <button
-            onClick={() => setIsModalOpen(false)}
-            className="absolute top-6 right-6 text-gray-400 hover:text-white transition-colors"
-          >
-            <span className="sr-only">Close</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
-
-          <div className="w-full max-w-3xl px-4 flex flex-col items-center gap-8">
-            <h2 className="text-4xl md:text-5xl font-medium text-white/90 tracking-tight text-center">
-              What can I help with?
-            </h2>
-
-            <div className="relative w-full">
-              {/* Toggle Mode */}
-              <div className="absolute -top-12 right-0 flex gap-4 text-sm font-medium">
-                <button
-                  onClick={() => setModalMode('ai')}
-                  className={`${modalMode === 'ai' ? 'text-white' : 'text-gray-500 hover:text-gray-300'}`}
-                >
-                  AI Agent
-                </button>
-                <button
-                  onClick={() => setModalMode('manual')}
-                  className={`${modalMode === 'manual' ? 'text-white' : 'text-gray-500 hover:text-gray-300'}`}
-                >
-                  Manual JSON
-                </button>
+        <div className="fixed inset-0 bg-white z-50 flex">
+          {/* Left Sidebar - Chat History */}
+          <div className="w-64 bg-gray-50 border-r border-gray-200 flex flex-col">
+            <div className="p-4 border-b border-gray-200">
+              <h3 className="text-sm font-semibold text-gray-900">Chat History</h3>
+            </div>
+            <div className="flex-1 overflow-y-auto p-3 space-y-2">
+              <div className="p-3 bg-white rounded-lg border border-gray-200 hover:border-indigo-300 cursor-pointer transition-colors">
+                <p className="text-sm font-medium text-gray-900 truncate">Current Session</p>
+                <p className="text-xs text-gray-500 mt-1">Just now</p>
               </div>
+            </div>
+            <div className="p-3 border-t border-gray-200">
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                Close
+              </button>
+            </div>
+          </div>
 
-              <div className="relative group w-full">
-                {modalMode === 'ai' ? (
-                  <div className="relative">
-                    <Plus className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-gray-400" />
-                    <input
-                      type="text"
-                      className="w-full bg-[#2C2C2C] text-white text-lg rounded-full py-4 pl-14 pr-32 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-shadow placeholder:text-gray-500"
-                      placeholder="Ask anything"
-                      value={prompt}
-                      onChange={(e) => setPrompt(e.target.value)}
-                      onKeyDown={(e) => e.key === 'Enter' && !isGenerating && handleGenerate()}
-                      autoFocus
-                    />
-                    <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
-                      {/* Input Buttons */}
+          {/* Main Chat Area */}
+          <div className="flex-1 flex flex-col">
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white">
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900">Create New Agent</h2>
+                <p className="text-sm text-gray-500 mt-0.5">Describe your workflow in natural language</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1">
+                  <button
+                    onClick={() => setModalMode('ai')}
+                    className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${modalMode === 'ai'
+                        ? 'bg-white text-gray-900 shadow-sm'
+                        : 'text-gray-600 hover:text-gray-900'
+                      }`}
+                  >
+                    AI Agent
+                  </button>
+                  <button
+                    onClick={() => setModalMode('manual')}
+                    className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${modalMode === 'manual'
+                        ? 'bg-white text-gray-900 shadow-sm'
+                        : 'text-gray-600 hover:text-gray-900'
+                      }`}
+                  >
+                    Manual JSON
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Messages Area */}
+            <div className="flex-1 overflow-y-auto bg-gradient-to-b from-gray-50 to-white">
+              <div className="max-w-3xl mx-auto px-6 py-8">
+                {modalMode === 'ai' && !prompt && (
+                  <div className="text-center py-12">
+                    <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Start a new conversation</h3>
+                    <p className="text-sm text-gray-500">
+                      Describe the workflow you want to create, and I'll generate it for you.
+                    </p>
+                    <div className="mt-6 grid grid-cols-2 gap-3">
                       <button
-                        onClick={handleGenerate}
-                        disabled={!prompt || isGenerating}
-                        className={`p-2 rounded-full transition-all ${prompt ? 'bg-white text-black' : 'bg-gray-600 text-gray-400 cursor-not-allowed'}`}
+                        onClick={() => setPrompt('Create a workflow that sends daily email reports')}
+                        className="p-4 text-left bg-white border border-gray-200 rounded-xl hover:border-indigo-300 hover:shadow-sm transition-all"
                       >
-                        {isGenerating ? (
-                          <span className="animate-spin block w-5 h-5 border-2 border-black/30 border-t-black rounded-full" />
-                        ) : (
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="20"></line><line x1="6" y1="20" x2="6" y2="20"></line></svg>
-                        )}
+                        <p className="text-sm font-medium text-gray-900">📧 Email Report</p>
+                        <p className="text-xs text-gray-500 mt-1">Daily automated reports</p>
+                      </button>
+                      <button
+                        onClick={() => setPrompt('Create a workflow that monitors Google Sheets for changes')}
+                        className="p-4 text-left bg-white border border-gray-200 rounded-xl hover:border-indigo-300 hover:shadow-sm transition-all"
+                      >
+                        <p className="text-sm font-medium text-gray-900">📊 Sheet Monitor</p>
+                        <p className="text-xs text-gray-500 mt-1">Track spreadsheet updates</p>
                       </button>
                     </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Input Area */}
+            <div className="border-t border-gray-200 bg-white px-6 py-4">
+              <div className="max-w-3xl mx-auto">
+                {modalMode === 'ai' ? (
+                  <div className="relative">
+                    <textarea
+                      className="w-full bg-white text-gray-900 text-base rounded-2xl py-4 px-5 pr-14 focus:outline-none focus:ring-2 focus:ring-indigo-500 border border-gray-300 placeholder:text-gray-400 resize-none overflow-hidden"
+                      placeholder="Describe your workflow... (e.g., 'Send Slack alerts when new leads arrive')"
+                      value={prompt}
+                      onChange={(e) => {
+                        setPrompt(e.target.value);
+                        // Auto-expand textarea
+                        e.target.style.height = 'auto';
+                        e.target.style.height = Math.min(e.target.scrollHeight, 200) + 'px';
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' && !e.shiftKey && !isGenerating) {
+                          e.preventDefault();
+                          handleGenerate();
+                        }
+                      }}
+                      rows={1}
+                      style={{ minHeight: '56px', maxHeight: '200px' }}
+                      autoFocus
+                    />
+                    <button
+                      onClick={handleGenerate}
+                      disabled={!prompt || isGenerating}
+                      className={`absolute right-3 bottom-3 p-2.5 rounded-xl transition-all ${prompt && !isGenerating
+                          ? 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm'
+                          : 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                        }`}
+                    >
+                      {isGenerating ? (
+                        <svg className="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                        </svg>
+                      ) : (
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                      )}
+                    </button>
                   </div>
                 ) : (
                   <div className="relative">
                     <textarea
-                      className="w-full bg-[#2C2C2C] text-white text-sm font-mono rounded-3xl py-6 px-8 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-shadow placeholder:text-gray-500 min-h-[200px]"
+                      className="w-full bg-gray-50 text-gray-900 text-sm font-mono rounded-2xl py-4 px-5 focus:outline-none focus:ring-2 focus:ring-indigo-500 border border-gray-300 placeholder:text-gray-400 min-h-[300px]"
                       placeholder='Paste your n8n workflow JSON here...'
                       value={manualJson}
                       onChange={(e) => setManualJson(e.target.value)}
@@ -327,12 +410,16 @@ export default function Dashboard() {
                     <button
                       onClick={handleGenerate}
                       disabled={!manualJson || isGenerating}
-                      className="absolute bottom-4 right-4 bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors disabled:opacity-50"
+                      className="absolute top-4 right-4 bg-indigo-600 text-white px-5 py-2.5 rounded-xl font-medium hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
                     >
                       {isGenerating ? 'Importing...' : 'Import JSON'}
                     </button>
                   </div>
                 )}
+                <p className="text-xs text-gray-500 mt-3">
+                  Press <kbd className="px-2 py-0.5 bg-gray-100 border border-gray-300 rounded text-xs font-mono">Enter</kbd> to send,
+                  <kbd className="px-2 py-0.5 bg-gray-100 border border-gray-300 rounded text-xs font-mono ml-1">Shift + Enter</kbd> for new line
+                </p>
               </div>
             </div>
           </div>
